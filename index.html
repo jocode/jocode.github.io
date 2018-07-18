@@ -32,9 +32,9 @@
 	<meta name="twitter:domain" content="http://jocode.github.io/" />
 
 	<title>Johan Mosquera - @johanmosquer</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> 
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" media="none" onload="if(media!='all')media='all'">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" media="none" onload="if(media!='all')media='all'"> 
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
@@ -42,9 +42,9 @@
 	<header>
 		<div class="contenedor">
 			<nav class="menu">
-				<a href="#acerca-de">Acerca de</a>
-				<a href="#trabajos">Trabajos</a>
-				<a href="#contacto">Contacto</a>
+				<a class="page-scroll" href="#acerca-de">Acerca de</a>
+				<a class="page-scroll" href="#trabajos">Trabajos</a>
+				<a class="page-scroll" href="#contacto">Contacto</a>
 			</nav>
 
 			<div class="contenedor-texto">
@@ -79,39 +79,51 @@
 				<div class="contenedor-trabajos">
 
 					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/1.jpg" alt="Diseño web">
-						</div>
+						<a class="thumb" href="http://johanmosquera.me/web-design/practicas/restaurante/">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/cafe.jpg" alt="Diseño web">
+						</a>
 						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - PHP</p>
-						</div>
-					</div>
-					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/2.jpg" alt="Diseño web">
-						</div>
-						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
+							<p class="nombre">Café y algo más</p>
 							<p class="categoria">HTML - CSS - Javascript</p>
 						</div>
 					</div>
 					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/3.jpg" alt="Diseño web">
-						</div>
+						<a class="thumb">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/1.jpg" alt="Diseño web">
+						</a>
 						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - Python</p>
+							<p class="nombre">Target group</p>
+							<p class="categoria">HTML - CSS - PHP</p>
 						</div>
 					</div>
 					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/6.jpg" alt="Diseño web">
-						</div>
+						<a class="thumb">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/3.jpg" alt="Diseño web">
+						</a>
 						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - Java</p>
+							<p class="nombre">Mi Region</p>
+							<p class="categoria">Android, Java, REST</p>
+						</div>
+					</div>
+					<div class="trabajo">
+						<a class="thumb">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/6.jpg" alt="Diseño web">
+						</a>
+						<div class="descripcion">
+							<p class="nombre">Medicinals</p>
+							<p class="categoria">Wordpress - Design</p>
 						</div>
 					</div>
 
@@ -138,11 +150,13 @@
 				<a href="https://twitter.com/johanmosquer" class="twitter"><i class="fa fa-twitter"></i></a>
 				<a href="https://github.com/jocode" class="github"><i class="fa fa-github"></i></a>
 				<a href="https://www.linkedin.com/in/johanmosquera/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-				<a href="https://www.facebook.com/joncamosn" class="facebook"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.facebook.com/johanmosquera.me" class="facebook"><i class="fa fa-facebook"></i></a>
 			</div>
 		</section>
 		<div class="made"><p class="made">Made with ❤️ by Johan Mosquera &copy;</p></div>
 	</footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

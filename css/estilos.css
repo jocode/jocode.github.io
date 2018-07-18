@@ -19,7 +19,7 @@ body {
 
 /*--------- Header -----------*/
 header {
-	background: url("../img/background.png") #15100d;
+	background: url("../img/bg.png") #15100d;
 	background-repeat: none;
 	background-position: center;
 	max-height: 600px;
@@ -127,7 +127,7 @@ main .trabajos {
 }
 
 main .trabajos .contenedor {
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 main .trabajos .titulo {
@@ -154,12 +154,39 @@ main .trabajos .contenedor-trabajos .trabajo {
 main .trabajos .contenedor-trabajos .trabajo .thumb {
 	width: 100%;
 	margin-bottom: 10px;
+	display: block;
+	position: relative;
 }
 
 main .trabajos .contenedor-trabajos .trabajo .thumb img {
 	width: 100%;
 	vertical-align: top;
 	border-radius: 3px;
+}
+
+/* Hover portafolio */
+main .trabajos .trabajo .thumb .thumb-hover {
+	background: rgba(30, 43, 56, .5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0;
+	transition: all ease .5s;
+}
+
+main .trabajos .trabajo .thumb .thumb-hover:hover {
+	opacity: 1;
+}
+
+main .trabajos .trabajo .thumb .thumb-hover .icon {
+	position: absolute;
+  	width: 100%;
+  	font-size: 40px;
+  	text-align: center;
+  	top: 50%;
+  	margin-top: -25px;
+  	color: white;
+    border-radius: 25px;
 }
 
 main .trabajos .contenedor-trabajos .trabajo .descripcion {
@@ -179,7 +206,7 @@ main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
 
 /*-------- Footer ---------*/
 footer .contacto {
-	padding: 60px 0;
+	padding: 40px 0;
 }
 
 footer .contacto .titulo {

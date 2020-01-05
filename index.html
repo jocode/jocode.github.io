@@ -20,6 +20,8 @@
 	<link rel="stylesheet" type="text/css"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" media="none"
 		onload="if(media!='all')media='all'">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
 	<!-- SEO -->
@@ -220,7 +222,8 @@
 		<section id="contacto" class="contacto">
 			<div class="contenedor">
 				<h3 class="titulo">Contacto</h3>
-				<form class="formulario">
+				<div id="result" class="alert text-center"></div>
+				<form id="formulario" class="formulario">
 					<input type="text" name="nombre" placeholder="Nombre" required>
 					<input type="email" name="email" placeholder="Correo" required>
 					<textarea name="mensaje" placeholder="Mensaje"></textarea>

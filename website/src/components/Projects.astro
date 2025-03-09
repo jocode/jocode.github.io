@@ -1,0 +1,134 @@
+---
+// Import necessary assets
+import projects from '../data/projects.json';
+---
+
+<section id="trabajos" class="trabajos">
+  <div class="contenedor">
+    <h3 class="titulo">Trabajos</h3>
+
+    <div class="contenedor-trabajos">
+      {projects.map((project) => (
+        <div class="trabajo">
+          <a class="thumb" href={project.link} target="_blank">
+            <div class="thumb-hover">
+              <div class="icon"><i class="fa fa-search"></i></div>
+            </div>
+            <img src={project.image} alt={project.alt} style={project.name === "Tómate tu tiempo" ? "overflow: hidden" : ""} />
+          </a>
+          <div class="descripcion">
+            <p class="nombre">{project.name}</p>
+            <p class="categoria">{project.category}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  /*---------- Trabajos -------------*/
+  .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .trabajos {
+    background-color: #f2f2f2;
+    padding: 60px 0;
+  }
+
+  .trabajos .contenedor {
+    overflow: hidden;
+  }
+
+  .trabajos .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300px;
+    color: #2D2E2E;
+    text-align: center;
+  }
+
+  .trabajos .contenedor-trabajos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .trabajos .contenedor-trabajos .trabajo {
+    width: 21%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 40px;
+  }
+
+  .trabajos .contenedor-trabajos .trabajo .thumb {
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+  }
+
+  .trabajos .contenedor-trabajos .trabajo .thumb img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 3px;
+  }
+
+  /* Hover portafolio */
+  .trabajos .trabajo .thumb .thumb-hover {
+    background: rgba(30, 43, 56, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all ease .5s;
+  }
+
+  .trabajos .trabajo .thumb .thumb-hover:hover {
+    opacity: 1;
+  }
+
+  .trabajos .trabajo .thumb .thumb-hover .icon {
+    position: absolute;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    top: 50%;
+    margin-top: -25px;
+    color: white;
+    border-radius: 25px;
+  }
+
+  .trabajos .contenedor-trabajos .trabajo .descripcion {
+    text-align: center;
+  }
+
+  .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
+    font-weight: 700px;
+    color: #FA3232;
+    margin-bottom: 10px;
+  }
+
+  .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+    font-size: 14px;
+    color: #636363;
+  }
+
+  @media screen and (max-width: 800px) {
+    .trabajos .contenedor-trabajos .trabajo {
+      width: 46%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .trabajos .contenedor-trabajos .trabajo {
+      width: 100%;
+    }
+  }
+</style>

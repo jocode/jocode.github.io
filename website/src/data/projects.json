@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Tómate tu tiempo",
+    "category": "App - Android - Design",
+    "image": "/img/trabajos/tomatetutiempo.png",
+    "link": "https://play.google.com/store/apps/details?id=com.crexative.pomtask",
+    "alt": "Desarrollo móvil"
+  },
+  {
+    "name": "Best Coffee of Colombia",
+    "category": "HTML - CSS - Javascript",
+    "image": "/img/trabajos/best_coffee.png",
+    "link": "https://bestcoffeecolombia.github.io/",
+    "alt": "Diseño web"
+  },
+  {
+    "name": "App BusTicket",
+    "category": "Android - Java - App",
+    "image": "/img/trabajos/busticket.png",
+    "link": "https://play.google.com/store/apps/details?id=com.smartgeeks.busticket",
+    "alt": "Desarrollo Móvil"
+  },
+  {
+    "name": "Offitec Colombia",
+    "category": "HTML - CSS - Bootstrap",
+    "image": "/img/trabajos/offitec.png",
+    "link": "https://offitec.github.io/",
+    "alt": "Diseño web"
+  },
+  {
+    "name": "Comité de Ganaderos del Huila",
+    "category": "Wordpress - PHP - Design",
+    "image": "/img/trabajos/comite_ganaderos.png",
+    "link": "http://comitedeganaderosdelhuila.org/",
+    "alt": "Desarrollo web"
+  },
+  {
+    "name": "Portafolio",
+    "category": "HTML - CSS - Vanilla Javascript",
+    "image": "/img/trabajos/portfolio.png",
+    "link": "https://jocode.github.io/desarrollo.web/",
+    "alt": "Diseño web"
+  },
+  {
+    "name": "Afina tu Memoria",
+    "category": "Juego - Vanilla Javascript - Design",
+    "image": "/img/trabajos/juego_memoria.png",
+    "link": "https://jocode.github.io/fundamentos-js/",
+    "alt": "Diseño web"
+  },
+  {
+    "name": "React Tetris",
+    "category": "ReactJS - Javascript - Design",
+    "image": "/img/trabajos/tetris_game.png",
+    "link": "https://jocode.github.io/react-tetris/",
+    "alt": "Juego de Tetris en React"
+  }
+]

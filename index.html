@@ -1,73 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta name="description" content="Johan Mosquera - Desarrollador, geek y diseñador. Página web personal de Johan Mosquera." />
-	<meta name="keywords" content="Johan Mosquera, Personal, Marca, Sitio Web, Marca Personal, Johan, Camilo, Mosquera, Ninco, Johan Camilo, jocode, Diseño, php, java, Programación, MySQL, marketing digital, SEO, SEM, SMM, SMO, Photoshop, HTML, CSS, Javascript, XML, RSS." />
+<html lang="es_ES">
 
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<title>Johan Mosquera - Website</title>
+	<meta name="description"
+		content="Johan Mosquera - Desarrollador, geek y diseñador. Página web personal de Johan Mosquera. Johan Camilo Mosquera Ninco" />
+	<meta name="keywords"
+		content="Johan Camilo Mosquera Ninco, Johan Mosquera, Personal, Marca, Sitio Web, Marca Personal, Johan, Camilo, Mosquera, Ninco, Johan Camilo, jocode, Diseño, php, java, Programación, MySQL, marketing digital, SEO, SEM, SMM, SMO, Photoshop, HTML, CSS, Javascript, XML, RSS." />
+	<meta name="theme-color" content="#1e2b38" />
+
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+		media="none" onload="if(media!='all')media='all'" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" media="none"
+		onload="if(media!='all')media='all'" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" media="none"
+		onload="if(media!='all')media='all'" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+	<!-- SEO -->
+	<link rel="canonical" href="https://jocode.github.io/" />
 	<meta name="author" content="Johan Mosquera" />
 	<meta name="copyright" content="Johan Mosquera" />
 	<meta name="designer" content="Johan Mosquera" />
 	<meta name="publisher" content="Johan Mosquera" />
-	<link rel="shortcut icon" href="https://avatars0.githubusercontent.com/u/24928806?s=460&v=4" />
+	<link rel="shortcut icon" href="img/icono.png" />
 
-	<meta property="og:title" content="Johan Mosquera - @joncamosn" />
-	<meta property="og:site_name" content="Johan Mosquera" />
-	<meta property="og:url" content="https://www.facebook.com/joncamosn" />
-	<meta property="og:description" content="Johan Mosquera - Blog posts, presentations, games, web sites, apps, GitHub, and more..." />
-	<meta property="article:author" content="https://www.facebook.com/joncamosn/" />
-	<meta property="article:publisher" content="https://www.facebook.com/joncamosn/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Johan Mosquera - Website" />
+	<meta property="og:description"
+		content="Johan Mosquera - Desarrollador, geek y diseñador. Página web personal de Johan Mosquera. Johan Camilo Mosquera Ninco." />
+	<meta property="og:url" content="https://jocode.github.io/" />
+	<meta property="og:site_name" content="Johan Mosquera - Website" />
+
+	<!-- og tags Facebook -->
+	<meta property="fb:admins" content="1325183327599534" />
+	<meta property="og:title" content="Johan Mosquera - @johanmosquera.me" />
+	<meta property="og:description"
+		content="Johan Mosquera - Blog posts, presentations, games, web sites, apps, GitHub, and more..." />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="jocode.github.io" />
+	<meta property="og:url" content="https://jocode.github.io/" />
 	<meta property="og:image" content="https://avatars0.githubusercontent.com/u/24928806?s=460&v=4" />
-	<meta property="og:image:width" content="670" />
-	<meta property="og:image:height" content="400" />
 
+	<!-- og tags Google+ -->
+	<meta itemprop="description"
+		content="Johan Mosquera - Blog posts, presentations, games, web sites, apps, GitHub, and more..." />
 
-	<meta name="twitter:site" content="Johan Mosquera - @johanmosquer" />
+	<!-- Twitter Cards -->
+	<meta property="twitter:account_id" content="3153150346" />
+	<meta name="twitter:site" content="@johanmosquer" />
 	<meta name="twitter:url" content="https://twitter.com/johanmosquer" />
-	<meta name="twitter:card" content="Johan Mosquera - Blog posts, presentations, games, web sites, apps, GitHub, and more..." />
+	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Johan Mosquera - @johanmosquer" />
-	<meta name="twitter:description" content="Johan Mosquera - Blog posts, presentations, games, web sites, apps, GitHub, and more..." />
+	<meta name="twitter:description"
+		content="Johan Mosquera - Blog posts, presentations, games, web sites, apps, GitHub, and more..." />
+	<meta name="twitter:creator" content="@johanmosquer" />
 	<meta name="twitter:image" content="https://avatars0.githubusercontent.com/u/24928806?s=460&v=4" />
-	<meta name="twitter:domain" content="http://jocode.github.io/" />
-
-	<title>Johan Mosquera - @johanmosquer</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="stylesheet"> 
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<meta name="twitter:domain" content="jocode.github.io/" />
 </head>
-<body>
 
+<body>
 	<header>
 		<div class="contenedor">
 			<nav class="menu">
-				<a href="#acerca-de">Acerca de</a>
-				<a href="#trabajos">Trabajos</a>
-				<a href="#contacto">Contacto</a>
+				<a class="page-scroll icon"><img height="70" src="img/icono.png" /></a>
+				<div>
+					<a class="page-scroll" href="#acerca-de">Acerca de</a>
+					<a class="page-scroll" href="#trabajos">Trabajos</a>
+					<a class="page-scroll" href="#contacto">Contacto</a>
+				</div>
 			</nav>
 
 			<div class="contenedor-texto">
 				<div class="texto">
 					<h1 class="nombre">Johan Mosquera</h1>
-					<h2 class="profesion">Desarrollador - Geek - Diseñador</h2>
+					<h2 class="profesion">Geek & Developer</h2>
 				</div>
 			</div>
 		</div>
+
+		<div class="layer"></div>
 	</header>
 
 	<main>
 		<section id="acerca-de" class="acerca-de">
 			<div class="contenedor">
 				<div class="foto">
-					<img src="img/avatar.png" alt="Johan Mosquera" width="115" height="115" title="Perfil">
+					<img src="img/profile.png" alt="Johan Mosquera" title="Perfil" />
 				</div>
-				
+
 				<div class="texto">
 					<h3 class="titulo">Acerca de</h3>
-					<p>Desde que la tecnología se introdujo para ser parte fundamental en nuestras vidas, siempre he buscado la forma de ayudar a las personas a través de ella.</p>
-					<p>Hola, mi nombre es <span class="bold">Johan Camilo Mosquera</span>; me gustaría colaborarte en los <span class="bold">proyectos</span> que quieras hacer usando la tecnología como eje central. Soy una persona autodidacta, que le gustan los retos y que esta dispuesta a lograr los objetivos que se plantee.</p>
-					<p>Me gusta aprender cada día y me encantaría desarrollar tus <span class="bold">sitios web, aplicaciones móviles</span> ó <span class="bold">diseñar tu marca</span> para que puedas mostrarte al mundo.</p>
+					<p>
+						Desde que la tecnología se introdujo para ser parte fundamental en
+						nuestras vidas, siempre he buscado la forma de ayudar a las
+						personas a través de ella.
+					</p>
+					<p>
+						Hola, soy <span class="bold">Johan Mosquera</span>; desarrollador
+						de software y apasionado de la tecnología. Me gusta aprender cada
+						día y me encantan los retos porque con ellos siempre habrá un
+						nuevo objetivo por alcanzar.
+					</p>
+					<p>
+						Me gustaría colaborarte en los proyectos que quieras hacer, como
+						desarrollar tus
+						<span class="bold">sitios web, aplicaciones móviles ó diseñar tu marca</span>
+						para que puedas mostrarte al mundo.
+					</p>
 				</div>
 			</div>
 		</section>
@@ -77,72 +124,147 @@
 				<h3 class="titulo">Trabajos</h3>
 
 				<div class="contenedor-trabajos">
-
 					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/1.jpg" alt="Diseño web">
-						</div>
+						<a class="thumb" href="https://play.google.com/store/apps/details?id=com.crexative.pomtask" target="_blank">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/tomatetutiempo.png" alt="Desarrollo móvil" style="overflow: hidden" />
+						</a>
 						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - PHP</p>
+							<p class="nombre">Tómate tu tiempo</p>
+							<p class="categoria">App - Android - Design</p>
 						</div>
 					</div>
+
 					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/2.jpg" alt="Diseño web">
-						</div>
+						<a class="thumb" href="https://bestcoffeecolombia.github.io/" target="
+						_blank">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/best_coffee.png" alt="Diseño web" />
+						</a>
 						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
+							<p class="nombre">Best Coffee of Colombia</p>
 							<p class="categoria">HTML - CSS - Javascript</p>
 						</div>
 					</div>
+
 					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/3.jpg" alt="Diseño web">
-						</div>
+						<a class="thumb" href="https://play.google.com/store/apps/details?id=com.smartgeeks.busticket"
+							target="_blank">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/busticket.png" alt="Desarrollo Móvil" />
+						</a>
 						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - Python</p>
-						</div>
-					</div>
-					<div class="trabajo">
-						<div class="thumb">
-							<img src="img/trabajos/4.jpg" alt="Diseño web">
-						</div>
-						<div class="descripcion">
-							<p class="nombre">Lorem Ipsum</p>
-							<p class="categoria">HTML - CSS - Java</p>
+							<p class="nombre">App BusTicket</p>
+							<p class="categoria">Android - Java - App</p>
 						</div>
 					</div>
 
+					<div class="trabajo">
+						<a class="thumb" href="https://offitec.github.io/" target="_blank">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/offitec.png" alt="Diseño web" />
+						</a>
+						<div class="descripcion">
+							<p class="nombre">Offitec Colombia</p>
+							<p class="categoria">HTML - CSS - Bootstrap</p>
+						</div>
+					</div>
+
+					<div class="trabajo">
+						<a class="thumb" href="http://comitedeganaderosdelhuila.org/" target="_blank">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/comite_ganaderos.png" alt="Desarrollo web" />
+						</a>
+						<div class="descripcion">
+							<p class="nombre">Comité de Ganaderos del Huila</p>
+							<p class="categoria">Wordpress - PHP - Design</p>
+						</div>
+					</div>
+
+					<div class="trabajo">
+						<a class="thumb" href="https://jocode.github.io/desarrollo.web/" target="_blank">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/portfolio.png" alt="Diseño web" />
+						</a>
+						<div class="descripcion">
+							<p class="nombre">Portafolio</p>
+							<p class="categoria">HTML - CSS - Vanilla Javascript</p>
+						</div>
+					</div>
+
+					<div class="trabajo">
+						<a class="thumb" href="https://jocode.github.io/fundamentos-js/" target="_blank">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/juego_memoria.png" alt="Diseño web" />
+						</a>
+						<div class="descripcion">
+							<p class="nombre">Afina tu Memoria</p>
+							<p class="categoria">Juego - Vanilla Javascript - Design</p>
+						</div>
+					</div>
+
+					<div class="trabajo">
+						<a class="thumb" href="https://jocode.github.io/react-tetris/" target="_blank">
+							<div class="thumb-hover">
+								<div class="icon"><i class="fa fa-search"></i></div>
+							</div>
+							<img src="img/trabajos/tetris_game.png" alt="Juego de Tetris en React" />
+						</a>
+						<div class="descripcion">
+							<p class="nombre">React Tetris</p>
+							<p class="categoria">ReactJS - Javascript - Design</p>
+						</div>
+					</div>
 				</div>
 			</div>
-		</section>	
+		</section>
 	</main>
 
 	<footer>
 		<section id="contacto" class="contacto">
 			<div class="contenedor">
 				<h3 class="titulo">Contacto</h3>
-				<form class="formulario">
-					<input type="text" name="nombre" placeholder="Nombre" required>
-					<input type="email" name="email" placeholder="Correo" required>
+				<div id="result" class="alert text-center"></div>
+				<form id="formulario" class="formulario">
+					<input type="text" name="nombre" placeholder="Nombre" required />
+					<input type="email" name="email" placeholder="Correo" required />
 					<textarea name="mensaje" placeholder="Mensaje"></textarea>
-					<input class="boton" type="submit" name="enviar" value="Enviar">
+					<input class="boton" type="submit" name="enviar" value="Enviar" />
 				</form>
 			</div>
 		</section>
 
 		<section class="redes-sociales">
 			<div class="contenedor">
-				<a href="https://twitter.com/johanmosquer" class="twitter"><i class="fa fa-twitter"></i></a>
-				<a href="https://github.com/jocode" class="github"><i class="fa fa-github"></i></a>
-				<a href="https://www.linkedin.com/in/johanmosquera/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-				<a href="https://www.facebook.com/joncamosn" class="facebook"><i class="fa fa-facebook"></i></a>
+				<a target="_blank" href="https://twitter.com/johanmosquer" class="twitter"><i class="fa fa-twitter"></i></a>
+				<a target="_blank" href="https://github.com/jocode" class="github"><i class="fa fa-github"></i></a>
+				<a target="_blank" href="https://www.linkedin.com/in/johanmosquera/" class="linkedin"><i
+						class="fa fa-linkedin"></i></a>
+				<a target="_blank" href="https://www.facebook.com/johanmosquera.me" class="facebook"><i
+						class="fa fa-facebook"></i></a>
 			</div>
 		</section>
-		<div class="made"><p class="made">Made with ❤️ by Johan Mosquera &copy;</p></div>
+		<div class="made">
+			<p class="made">Made with ❤️ by Johan Mosquera</p>
+		</div>
 	</footer>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,166 @@
+---
+// Import necessary assets
+---
+
+<footer>
+  <section id="contacto" class="contacto">
+    <div class="contenedor">
+      <h3 class="titulo">Contacto</h3>
+      <div id="result" class="alert text-center"></div>
+      <form id="formulario" class="formulario">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="email" name="email" placeholder="Correo" required />
+        <textarea name="mensaje" placeholder="Mensaje"></textarea>
+        <input class="boton" type="submit" name="enviar" value="Enviar" />
+      </form>
+    </div>
+  </section>
+
+  <section class="redes-sociales">
+    <div class="contenedor">
+      <a target="_blank" href="https://twitter.com/johanmosquer" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a target="_blank" href="https://github.com/jocode" class="github"><i class="fa fa-github"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/johanmosquera/" class="linkedin"><i
+          class="fa fa-linkedin"></i></a>
+      <a target="_blank" href="https://www.facebook.com/johanmosquera.me" class="facebook"><i
+          class="fa fa-facebook"></i></a>
+    </div>
+  </section>
+  <div class="made">
+    <p class="made">Made with ❤️ by Johan Mosquera</p>
+  </div>
+</footer>
+
+<style>
+  /*-------- Footer ---------*/
+  .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .contacto {
+    padding: 40px 0;
+  }
+
+  .contacto .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300px;
+    color: #2D2E2E;
+    text-align: center;
+  }
+
+  .contacto .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacto .formulario input[type="text"],
+  .contacto .formulario input[type="email"],
+  .contacto .formulario textarea {
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+  }
+
+  .contacto .formulario input[type="text"]:focus,
+  .contacto .formulario input[type="email"]:focus,
+  .contacto .formulario textarea:focus {
+    border: 2px solid #387bea;
+  }
+
+  .contacto .formulario input[type="text"],
+  .contacto .formulario input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+  }
+
+  .contacto .formulario textarea {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100px;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+  }
+
+  .contacto .formulario .boton {
+    margin: auto;
+    background-color: #3895ea;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+  }
+
+  .contacto .formulario .boton:hover {
+    background-color: #387bea;
+  }
+
+  /*---------- redes sociales --------*/
+  .redes-sociales {
+    background-color: #1e2b38;
+    padding: 60px 0;
+  }
+
+  .redes-sociales .contenedor {
+    display: flex;
+    justify-content: center;
+  }
+
+  .redes-sociales a {
+    color: white;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+  }
+
+  .redes-sociales .twitter:hover {
+    background-color: #1da1f2;
+  }
+
+  .redes-sociales .facebook:hover {
+    background-color: #3b5998;
+  }
+
+  .redes-sociales .github:hover {
+    background-color: #333;
+  }
+
+  .redes-sociales .linkedin:hover {
+    background-color: #0077b5;
+  }
+
+  .made {
+    background-color: #1e2b38;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .redes-sociales .contenedor {
+      flex-wrap: wrap;
+      padding: 20px 0;
+    }
+
+    .contacto .formulario input[type="text"],
+    .contacto .formulario input[type="email"] {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+</style>

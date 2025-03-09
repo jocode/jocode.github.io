@@ -1,0 +1,128 @@
+---
+// Import necessary assets
+---
+
+<header>
+  <div class="contenedor">
+    <nav class="menu">
+      <a class="page-scroll icon"><img height="70" src="/img/icono.png" /></a>
+      <div>
+        <a class="page-scroll" href="#acerca-de">Acerca de</a>
+        <a class="page-scroll" href="#trabajos">Trabajos</a>
+        <a class="page-scroll" href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <div class="contenedor-texto">
+      <div class="texto">
+        <h1 class="nombre">Johan Mosquera</h1>
+        <h2 class="profesion">Geek & Developer</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="layer"></div>
+</header>
+
+<style>
+  /*--------- Header -----------*/
+  header {
+    background: url("/img/background.png") #15100d;
+    background-repeat: none;
+    background-position: center;
+    max-height: 600px;
+  }
+
+  .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  header .menu {
+    margin: 40px 0;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .menu .icon {
+    align-self: flex-end;
+  }
+
+  header .menu a {
+    margin: 0 20px;
+    color: white;
+    display: inline-block;
+    align-items: center;
+    font-size: 1em;
+    text-decoration: none;
+    padding-bottom: 9px;
+    border-bottom: 2px solid transparent;
+  }
+
+  header .menu a:hover {
+    border-bottom: 2px solid white;
+  }
+
+  header .contenedor-texto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 190px 0;
+  }
+
+  header .contenedor-texto .texto {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+  }
+
+  header .contenedor-texto .texto h1,
+  header .contenedor-texto .texto h2 {
+    color: white;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  header .contenedor-texto .texto .nombre {
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  header .contenedor-texto .texto .profesion {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  /*------------ Media Queries -------------*/
+  @media screen and (max-width: 800px) {
+    header .menu {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    header .menu {
+      justify-content: center;
+    }
+
+    header .menu .icon {
+      display: none;
+    }
+
+    header .contenedor-texto .texto .nombre {
+      font-size: 35px;
+    }
+
+    header .contenedor-texto .texto .profesion {
+      font-size: 18px;
+    }
+  }
+</style>

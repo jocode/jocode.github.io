@@ -1,6 +1,7 @@
 ---
 // Import necessary assets
 import projects from '../data/projects.json';
+import { projectImages, type ProjectImageKey } from '../utils/images';
 ---
 
 <section id="trabajos" class="trabajos">
@@ -14,7 +15,7 @@ import projects from '../data/projects.json';
             <div class="thumb-hover">
               <div class="icon"><i class="fa fa-search"></i></div>
             </div>
-            <img src={project.image} alt={project.alt} style={project.name === "Tómate tu tiempo" ? "overflow: hidden" : ""} />
+            <img src={projectImages[project.image as ProjectImageKey].src} alt={project.alt} />
           </a>
           <div class="descripcion">
             <p class="nombre">{project.name}</p>

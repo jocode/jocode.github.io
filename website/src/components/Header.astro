@@ -1,11 +1,11 @@
 ---
 // Import necessary assets
+import backgroundImage from '../assets/img/background.png';
 ---
 
 <header>
   <div class="contenedor">
     <nav class="menu">
-      <a class="page-scroll icon"><img height="70" src="/img/icono.png" /></a>
       <div>
         <a class="page-scroll" href="#acerca-de">Acerca de</a>
         <a class="page-scroll" href="#trabajos">Trabajos</a>
@@ -24,13 +24,14 @@
   <div class="layer"></div>
 </header>
 
-<style>
+<style define:vars={{ backgroundImageUrl: `url(${backgroundImage.src})` }}>
   /*--------- Header -----------*/
   header {
-    background: url("/img/background.png") #15100d;
+    max-height: 600px;
+    background-image: var(--backgroundImageUrl);
+    background-color: #15100d;
     background-repeat: none;
     background-position: center;
-    max-height: 600px;
   }
 
   .contenedor {

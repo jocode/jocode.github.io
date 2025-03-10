@@ -11,9 +11,9 @@ import { projectImages, type ProjectImageKey } from '../utils/images';
     <div class="contenedor-trabajos">
       {projects.map((project) => (
         <div class="trabajo">
-          <a class="thumb" href={project.link} target="_blank">
+          <a class="thumb" href={project.link} target="_blank" aria-label={`Ver proyecto: ${project.name}`}>
             <div class="thumb-hover">
-              <div class="icon"><i class="fa fa-search"></i></div>
+              <div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
             </div>
             <img src={projectImages[project.image as ProjectImageKey].src} alt={project.alt} />
           </a>
@@ -112,7 +112,7 @@ import { projectImages, type ProjectImageKey } from '../utils/images';
 
   .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
     font-weight: 700px;
-    color: #FA3232;
+    color: #D60000;
     margin-bottom: 10px;
   }
 

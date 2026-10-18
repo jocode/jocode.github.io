@@ -25,7 +25,7 @@ jobs:
         with:
           path: ./website # La ubicación raíz de tu proyecto de Astro dentro del repositorio.
           node-version: 20 # La versión específica de Node que debería usarse para construir tu sitio. Por defecto es 20.
-          package-manager: pnpm@latest # El gestor de paquetes de Node que debería usarse para instalar dependencias y construir tu sitio.
+          package-manager: pnpm@9.15.9 # Pinned: pnpm 10+ blocks esbuild/sharp build scripts (ERR_PNPM_IGNORED_BUILDS) and broke the deploy on 2026-10-18.
 
   deploy:
     needs: build
